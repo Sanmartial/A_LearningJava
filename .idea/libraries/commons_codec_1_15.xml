@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/lib/commons-codec-1.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/lib/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/lib/commons-io-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/lib/commons-math3-3.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/ooxml-lib/xmlbeans-5.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/ooxml-lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/ooxml-lib/commons-compress-1.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-examples-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-excelant-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-ooxml-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-ooxml-full-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-ooxml-lite-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-scratchpad-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/TomCat/apache-tomcat-10.0.12/lib/servlet-api.jar!/" />
+      <root url="jar://C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/jdbcDriver/jdbc-oracle.jar/jdbc-oracle.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/jdbcDriver/jdbc-connector-2.0-rc1.jar/jdbc-connector-2.0-rc1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../04-for install/jdbcDriver/jdbc-connector-2.0.jar/jdbc-connector-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../04-for install/APACHE POI/poi-bin-5.1.0/poi-javadoc-5.1.0.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../04-for install/jdbcDriver/jdbc-connector-2.0-rc1-sources.jar/jdbc-connector-2.0-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
