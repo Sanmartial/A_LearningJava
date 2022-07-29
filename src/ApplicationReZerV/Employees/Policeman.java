@@ -26,7 +26,7 @@ public class Policeman {
         this.shortName = shortName;
         this.patronymic = patronymic;
         this.tokenID = tokenID;
-        Position = position;
+        this.Position = position;
         this.unit = unit;
     }
 
@@ -60,10 +60,6 @@ public class Policeman {
         return shortName;
     }
 
-    public String getNameAndPatronymic() {
-        return nameAndPatronymic;
-    }
-
     public void setNameAndPatronymic(String nameAndPatronymic) {
         this.nameAndPatronymic = nameAndPatronymic;
     }
@@ -82,10 +78,6 @@ public class Policeman {
 
     public String getRank() {
         return rank;
-    }
-
-    public String getTenChar() {
-        return TenChar;
     }
 
     public void setTenChar(String tenChar) {
@@ -124,9 +116,6 @@ public class Policeman {
         return tokenID;
     }
 
-    public void setTokenID(String tokenID) {
-        this.tokenID = tokenID;
-    }
 
     public String getPosition() {
         return Position;
@@ -140,7 +129,5 @@ public class Policeman {
         return unit;
     }
 
-    public void setUnit(String unit) {
-        this.unit = unit;
-    }
+
 }
