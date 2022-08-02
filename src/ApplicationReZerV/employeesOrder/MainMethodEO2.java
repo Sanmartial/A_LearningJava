@@ -10,6 +10,7 @@ public class MainMethodEO2 {
     public static void main(String[] args) throws IOException {
         String pathXX = "\\\\Глоба-пк\\мои документы\\УДАЛИТЬ\\xx.txt";
         String pathResult  = "\\\\Глоба-пк\\мои документы\\УДАЛИТЬ\\result.txt";
+        String path = null;
 
         String[] positionEO = {
                 "відрядження", //0
@@ -41,7 +42,7 @@ public class MainMethodEO2 {
 
         List<String> listForResult = new ArrayList<>();
 
-        for (int i = 0; i < listXX.size(); i++) {
+        for(int i = 0; i < listXX.size(); i++) {
             if(listXX.get(i).toLowerCase(Locale.ROOT).trim().equals(positionEO[0].toLowerCase(Locale.ROOT).trim())){//відрядження
                 listForResult.add("ВД"+"\t"+"");
             }
