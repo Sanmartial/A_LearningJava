@@ -38,7 +38,7 @@ public class WriterReaderEPlus {
         } catch (IOException ex){ex.printStackTrace();}
         Path path1 = Paths.get(path);
 
-        System.out.printf("Результат записан в Файл %s", path1.getFileName());
+        System.out.printf("The result is written to %s", path1.getFileName());
 
     } // записываем в заданый файл
 

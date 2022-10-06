@@ -66,7 +66,7 @@ public class PasswordBody {
         return ch;
     }
 
-    public void getResultKeywords() throws InterruptedException {
+    public void getResultKeywords() throws InterruptedException, IOException {
         List<String> list = new ArrayList<>();
         System.out.print("Generating results ");
         for (int i = 0; i < 10; i++)
@@ -77,16 +77,19 @@ public class PasswordBody {
         list.add(getMethodThree());
         list.add(getMethodFour());
         list.add(getMethodFive());
+        list.add(getMethodFive());
+        list.add(getMethodFive());
         list.add(getMethodSix());
         list.add(getMethodSeven());
+        list.add(getMethodSeven());
         list.forEach(System.out::println);
+        CommonMethods.writeList(list, "D:\\Java\\A_LearningJava\\src\\ApplicationReZerV\\PasswordGen\\result.txt");
     }
 
     private String getMethodSeven() {
         StringBuilder sb1 = new StringBuilder();
-        return sb1.append(keyWordOne).append(getVariuosDigit().toCharArray()[0] + getVariuosDigit().toCharArray()[1]).append(getVariuosWord()).
-               append(getVariuosDigit().toCharArray()[2] + getVariuosDigit().toCharArray()[3]).append(getVariuosWord()).append(getVariuosDigit().
-               toCharArray()[4] + getVariuosDigit().toCharArray()[0]).substring(0);
+        char[] ch = getVariuosDigit().toCharArray();
+        return sb1.append(keyWordOne).append(ch[0]).append(ch[1]).append(getVariuosWord()).append(ch[2]).append(ch[3]).append(getVariuosWord()).append(ch[4] + ""+ ch[0]).substring(0);
     }
 
     private String getMethodSix() {
@@ -98,7 +101,6 @@ public class PasswordBody {
         StringBuilder sb1 = new StringBuilder();
         return sb1.append(keyWordOne).append("_").append(getVariuosWord()).append("_").append(getVariuosWord()).
                 substring(0);
-
     }
 
     private String getMethodFour() {
@@ -108,7 +110,6 @@ public class PasswordBody {
         for (int i = 0; i < ch.length; i++) {
             sb2.append(ch[(int) (Math.random() * ch.length)]);
         }
-
         return sb2.substring(0);
     }
 
@@ -155,16 +156,14 @@ public class PasswordBody {
     }
 
     private String getVariuosWord() {
-        String pathRandomWord = "D:\\Java\\A_LearningJava\\src\\ApplicationReZerV\\PasswordGen\\randomWords.txt";
-        List<String> list = readerListAll(pathRandomWord);
+        List<String> list = readerListAll("D:\\Java\\A_LearningJava\\src\\ApplicationReZerV\\PasswordGen\\randomWords.txt");
         StringBuilder sb1 = new StringBuilder();
         sb1.append(list.get((int) (Math.random() * list.size())));
         return sb1.substring(0);
     }
 
     private String getVariuosDigit() {
-        String parhRandomDigital = "D:\\Java\\A_LearningJava\\src\\ApplicationReZerV\\PasswordGen\\randomDigital.txt";
-        List<String> list = readerListAll(parhRandomDigital);
+        List<String> list = readerListAll("D:\\Java\\A_LearningJava\\src\\ApplicationReZerV\\PasswordGen\\randomDigital.txt");
         StringBuilder sb1 = new StringBuilder();
         sb1.append(list.get((int) (Math.random() * list.size())));
         return sb1.substring(0);

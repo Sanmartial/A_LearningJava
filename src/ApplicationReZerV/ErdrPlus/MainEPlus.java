@@ -31,7 +31,7 @@ public class MainEPlus {
             listTwo = compare.sortListErdr(listTwo);
             listResult = compare.compareListString(listOne, listTwo);
             wrRe.writerTxt(pathResult, listResult);
-            DB.writeDataBAse(listOne, listTwo, listResult);
+            //DB.writeDataBAse(listOne, listTwo, listResult);
         }
 
         if(choice == 2){

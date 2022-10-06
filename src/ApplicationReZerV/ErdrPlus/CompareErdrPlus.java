@@ -36,8 +36,8 @@ public class CompareErdrPlus {
             count = 0;
             for (int j = 0; j < list1.size(); j++) {
                 if (list.get(i).equals(list1.get(j))) {
-                    //listR.add(lineString(list.get(i), list1.get(j)));
-                    listR.add("OK");
+                    listR.add(lineString(list.get(i), list1.get(j)));
+                    //listR.add("OK");
                 }
                 else
                     count++;

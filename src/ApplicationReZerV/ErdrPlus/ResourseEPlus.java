@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class ResourseEPlus {
 
     public Integer listForChoice(){
-        System.out.println("1- сравнить два списка ердр\n2- подготовить список в формате 1 2021 10001-1234567\n" +
-                "3- подготовить список в формате 12021100011234567000 (с 000 в конце)\n4- исправить номер статьи с ст.185 ч.1 на 185 (из файла statUK.txt)");
+        System.out.println("1- compare two lists\n2- prepare list like this pattern 1 2021 10001-1234567\n" +
+                "3- prepare list like this pattern 12021100011234567000 (with 000 )\n4- correct the article number from ct.185 ch.1 like 185 (from file statUK.txt)");
         Scanner scanner = new Scanner(System.in);
         int choise = scanner.nextInt();
         while(choise < 1 || choise > 4){
-            System.out.println("Введите один из указанных номеров повторно");
+            System.out.println("Enter one of the given numbers again");
             choise = scanner.nextInt();
         }
         //System.out.println("Выбор - " + choise);
@@ -19,16 +19,16 @@ public class ResourseEPlus {
 
     public String textAfterChoice(int choice){
         if(choice == 1) {
-            return "Сравниваю два списка ЕРДР";
+            return "Comparing two ERDR lists";
         }
         if(choice == 2) {
-            return "Подготавливаю список";
+            return "I'm preparing a list";
         }
         if(choice == 3) {
-            return "Подготавливаю список";
+            return "I'm preparing a list";
         }
         if(choice == 4) {
-            return "Исправляю номера статьи УК";
+            return "Correcting article numbers of the Criminal Code";
         }
         else
                 return "";
